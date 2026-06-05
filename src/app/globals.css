@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fffcf8;
+  --foreground: #18181b;
+  --muted: #71717a;
+  --border: #e4e4e7;
+  --surface: #fffcf8;
+  --tag-bg: #f4f4f5;
+  --link-hover: #52525b;
+}
+
+.dark {
+  --background: #1e1e20;
+  --foreground: #e4e4e7;
+  --muted: #a1a1aa;
+  --border: #3f3f46;
+  --surface: #252528;
+  --tag-bg: #2e2e32;
+  --link-hover: #d4d4d8;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--source-serif-font), Georgia, serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.font-serif,
+.serif {
+  font-family: ui-serif, var(--font-pt-serif), var(--font-noto-serif), Georgia,
+    serif;
+}
+
+.font-sans,
+.sans {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
