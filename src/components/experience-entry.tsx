@@ -20,6 +20,9 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
             experience.company
           )}
         </h3>
+        {experience.location && (
+          <p className="text-xs text-muted mt-1">{experience.location}</p>
+        )}
         {experience.advisor && (
           <p className="text-sm text-muted leading-relaxed italic mt-2">
             Advisor: {experience.advisor}
